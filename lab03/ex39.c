@@ -60,6 +60,5 @@ int semAumento=0, semBonus=0;
  {
     printf("Apos o reajuste, seu salario eh R$ %.2f", salario);
  }
- printf("%d %d", semAumento, semBonus);
 return(0);
 }
