@@ -1,17 +1,16 @@
-////NAO SEI SE TA CERTO!!!!!!!
-
-
 #include <stdio.h>
-
-int main()
-{
-    float salario=2000;
-    int ano=1996;
-    while(ano<=2022)
+#include <stdlib.h>
+#include <math.h>
+int main(){
+    int ano;
+    double aumento, salario=2000;
+    aumento = salario*0.015;
+    for(ano=1996; ano<=2022; ano++)
     {
-        salario*= ((0.015*(ano-1995))+1);
-        ano++;
+        salario+= aumento;
+        aumento*= 2;
     }
-    printf("O salario atual desse funcionario eh de R$ %.2f", salario);
+    printf("O salario desse funcionario eh %.2lf", salario);
+
     return 0;
 }
