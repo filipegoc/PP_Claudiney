@@ -19,18 +19,14 @@ int main()
 int triangulo(int a){
     int i, j, k;
     for(i=1; i<=a; i++){
-        for(j=1; j<=(i*2); j++){
-            if(j!=1){
-                printf("*");        
-            }
+        for(j=1; j<=(i*2-1); j++){
             for(k=i; k<a; k++){
                 if(j==1){
                     printf(" "); 
                 }
             }
+            printf("*");        
         }
-        if(i!=a){
-            printf("\n");   
-        }
+        printf("\n");   
     }
 }
