@@ -1,12 +1,6 @@
 #include <stdio.h>
 
-int desenha_linha(int x){
-    int i;
-    for(i=1; i<=x; i++){
-        printf("=");
-    }
-    return 0;
-}
+void desenha_linha(int x);
 
 int main()
 {
@@ -15,4 +9,11 @@ int main()
     scanf("%d", &tamanho);
     desenha_linha(tamanho);
     return 0;
+}
+
+void desenha_linha(int x){
+    int i;
+    for(i=1; i<=x; i++){
+        printf("=");
+    }
 }
