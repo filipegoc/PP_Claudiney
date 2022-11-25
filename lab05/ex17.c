@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-float soma(int a, int b);
+void soma(int a, int b);
 
 int main()
 {
@@ -11,10 +11,10 @@ int main()
     return 0;
 }
 
-float soma(int a, int b){
+void soma(int a, int b){
     int i, s=0;
     for(i=a+1; i<b; i++){
         s+=i;
     }
-    return printf("A soma dos numeros entre %d a %d eh %d", a, b, s);
+    printf("A soma dos numeros entre %d a %d eh %d", a, b, s);
 }
