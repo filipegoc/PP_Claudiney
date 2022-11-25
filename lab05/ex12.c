@@ -1,14 +1,6 @@
 #include <stdio.h>
 
-int somaAlgarismo(int x){
-    int soma=0, digito;
-    while(x>0){
-            digito= x%10;
-            soma+= digito;
-            x/=10;
-        }
-    return printf("A soma dos algarismos eh: %d", soma);
-}
+int somaAlgarismo(int x);
 
 int main()
 {
@@ -22,4 +14,14 @@ int main()
         printf("Numero invalido!");
     }
     return 0;
+}
+
+int somaAlgarismo(int x){
+    int soma=0, digito;
+    while(x>0){
+            digito= x%10;
+            soma+= digito;
+            x/=10;
+        }
+    return printf("A soma dos algarismos eh: %d", soma);
 }
