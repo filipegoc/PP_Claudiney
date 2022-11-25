@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int triangulo(int a);
+void triangulo(int a);
 
 int main()
 {
@@ -16,7 +16,7 @@ int main()
     return 0;
 }
 
-int triangulo(int a){
+void triangulo(int a){
     int i, j, k;
     for(i=1; i<=a; i++){
         for(j=1; j<=(i*2-1); j++){
