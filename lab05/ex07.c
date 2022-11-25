@@ -1,8 +1,6 @@
 #include <stdio.h>
 
-int conversao(float c){
-    return c*1.8+32;
-}
+int conversao(float c);
 
 int main()
 {
@@ -12,4 +10,8 @@ int main()
     fahrenheit= conversao(celsius);
     printf("O tempo temperatura em Fahrenheit eh %.2f", fahrenheit);
     return 0;
+}
+
+int conversao(float c){
+    return c*1.8+32;
 }
