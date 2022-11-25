@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int trianguloLateral(int a);
+void trianguloLateral(int a);
 
 int main()
 {
@@ -13,11 +13,10 @@ int main()
     else{
         printf("Erro.");
     }
-    
     return 0;
 }
 
-int trianguloLateral(int a){
+void trianguloLateral(int a){
     int i, j;
     for(i=1; i<=a; i++){
         for(j=1; j<=i; j++){
