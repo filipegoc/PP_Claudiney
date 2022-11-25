@@ -1,13 +1,6 @@
 #include <stdio.h>
 
-float Comparacao(float x, float y){
-    if(x>y){
-        return x;
-    }
-    else{
-        return y;
-    }
-}
+float Comparacao(float x, float y);
 
 int main()
 {
@@ -17,4 +10,13 @@ int main()
     maior= Comparacao(a, b);
     printf("O maior valor eh %.2f", maior);
     return 0;
+}
+
+float Comparacao(float x, float y){
+    if(x>y){
+        return x;
+    }
+    else{
+        return y;
+    }
 }
