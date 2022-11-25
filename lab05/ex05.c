@@ -1,9 +1,6 @@
 #include <stdio.h>
 
-float volumeEsfera(float r){
-    float pi=3.141592653;
-    return (r*r*r*pi)*4/3;
-}
+float volumeEsfera(float r);
 
 int main()
 {
@@ -13,4 +10,9 @@ int main()
     volume= volumeEsfera(raio);
     printf("O volume total eh %.4f", volume);
     return 0;
+}
+
+float volumeEsfera(float r){
+    float pi=3.141592653;
+    return (r*r*r*pi)*4/3;
 }
