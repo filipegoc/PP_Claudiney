@@ -4,7 +4,7 @@ void media(float x, float y, float z, char a);
 
 int main()
 {
-    float n1, n2, n3, mediaFinal;
+    float n1, n2, n3;
     char letra;
     printf("Digite suas 3 notas: ");
     scanf("%f %f %f", &n1, &n2, &n3);
