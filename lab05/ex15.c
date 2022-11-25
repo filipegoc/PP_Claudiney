@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-float triangulo(float a, float b, float c);
+int triangulo(float a, float b, float c);
 
-float tipoTriangulo(float x, float y, float z);
+void tipoTriangulo(float x, float y, float z);
 
 int main()
 {
@@ -27,24 +27,23 @@ int main()
     return 0;
 }
 
-float triangulo(float a, float b, float c){
+int triangulo(float a, float b, float c){
     if((a<b+c) && (b<a+c) && (c<a+b)){
         return 1;
     }
     else{
-        return printf("Nao eh triangulo");
+        printf("Nao eh triangulo");
     }
 }
 
-float tipoTriangulo(float x, float y, float z){
+void tipoTriangulo(float x, float y, float z){
     if(x==y && y==z){
-        return printf("Triangulo Equilatero");;
+        printf("Triangulo Equilatero");;
     }
     else if(x==y || x==z || y==z){
-        return printf("Triangulo Isosceles");;
+        printf("Triangulo Isosceles");;
     }
     else if(x!=y && x!=z && y!=z){
-        return printf("Triangulo Escaleno");;
+        printf("Triangulo Escaleno");;
     }   
-    
 }
