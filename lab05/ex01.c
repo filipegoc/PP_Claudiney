@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 float dobro(float a);
 
 int main()
