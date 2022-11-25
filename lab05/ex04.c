@@ -1,16 +1,6 @@
 #include <stdio.h>
 
-int numQuadrado(int a){
-    int i, iAoQuadrado=0;
-    for (i=0; i*i<a; i++)
-    {
-    }
-    if (i*i==a)
-        {
-            return 1;
-        }
-    
-}
+int numQuadrado(int a);
 
 int main()
 {
@@ -29,4 +19,15 @@ int main()
     else
         printf("Numero invalido");
     return 0;
+}
+
+int numQuadrado(int a){
+    int i;
+    for (i=0; i*i<a; i++)
+    {
+    }
+    if (i*i==a)
+        {
+            return 1;
+        }
 }
