@@ -1,9 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-float hipotenusa(float a, float b){
-    return sqrt(a*a+b*b);
-}
+float hipotenusa(float a, float b);
 
 int main()
 {
@@ -13,4 +11,8 @@ int main()
     hip= hipotenusa(cateto1, cateto2);
     printf("O valor da hipotenusa eh %.2f", hip);
     return 0;
+}
+
+float hipotenusa(float a, float b){
+    return sqrt(a*a+b*b);
 }
