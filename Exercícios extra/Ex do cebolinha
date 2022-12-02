@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+void main()
+{
+    int i;
+    char frase[100]="";
+    printf("Digite uma frase na norma culta padrao e vamos escreve-la como se o cebolinha estivesse falando-a:\n");
+    fgets(frase, 100, stdin);
+    for(i=0; i<100; i++){
+        if((frase[i] == 'r') && (frase[i+1] == ' ') || (frase[i] == 'R') && (frase[i+1] == ' ')){
+            printf("%c", frase[i]);
+        }
+        else if((frase[i] == 'r') && (frase[i+1] == '.') || (frase[i] == 'R') && (frase[i+1] == '.')){
+            printf("%c", frase[i]);
+        }
+        else if((frase[i] == 'r') && (frase[i+1] == '!') || (frase[i] == 'R') && (frase[i+1] == '!')){
+            printf("%c", frase[i]);
+        }
+        else if((frase[i] == 'r') && (frase[i+1] == '?') || (frase[i] == 'R') && (frase[i+1] == '?')){
+            printf("%c", frase[i]);
+        }
+        else if((frase[i] == 'r') && (frase[i+1] == 'r')){
+            printf("l");
+            i++;
+        }
+        else if((frase[i] == 'r') && (frase[i+1] != 'r') || (frase[i] == 'R') && (frase[i+1] != 'r')){
+            printf("l");
+        }
+        
+        else{
+            printf("%c", frase[i]);
+        }
+    }
+}
